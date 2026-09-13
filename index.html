@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DevOps Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+
+h2{
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+p{
+font-size:1.2rem;
+max-width:800px;
+line-height:1.8;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 30px;
+background:#38bdf8;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:18px;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.section{
+padding:80px 20px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:10px;
+width:250px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#1e293b;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Welcome to My DevOps Journey</h1>
+
+<h2>Jenkins + Docker + CI/CD Automation</h2>
+
+<p>
+This application was automatically deployed using a Jenkins Pipeline.
+Every code change can be built, tested, containerized and deployed
+without manual intervention.
+</p>
+
+<button class="btn" onclick="showMessage()">
+Show Deployment Status
+</button>
+
+<p id="message" style="margin-top:20px;"></p>
+
+</header>
+
+<section class="section">
+
+<h2>Skills Demonstrated</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Jenkins</h3>
+<p>Pipeline Automation</p>
+</div>
+
+<div class="card">
+<h3>Docker</h3>
+<p>Container Deployment</p>
+</div>
+
+<div class="card">
+<h3>GitHub</h3>
+<p>Source Control</p>
+</div>
+
+<div class="card">
+<h3>CI/CD</h3>
+<p>Continuous Delivery</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+Built and Deployed using Jenkins CI/CD Pipeline
+</p>
+
+</footer>
+
+<script>
+
+function showMessage(){
+
+document.getElementById("message").innerHTML =
+"✅ Deployment Successful! Application is running inside Docker Container.";
+
+}
+
+</script>
+
+</body>
+</html>
+
